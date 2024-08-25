@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-black">
+
+    <nav class="fixed top-0 left-0 bottom-0 bg-[#222222] flex  flex-col w-32 ">
+        <div class="logo relative">
+            <img src="./images/man_smoke.jpg" class="w-full" alt="">
+            <div class="logo-layer absolute top-0 left-0 bottom-0 right-0 bg-white opacity-30  ">
+            </div>
+        </div>
+        <div
+            class="nav-link flex flex-col justify-center items-center p-8 text-white bg-black hover:bg-white hover:text-black ">
+            <a href="#" class="text-2xl"> <i class="fa-solid fa-house"></i></a>
+            <span>HOME</span>
+        </div>
+        <div class="nav-link flex flex-col justify-center items-center p-8 text-white  hover:bg-black ">
+            <a href="#about" class="text-2xl"> <i class="fa-solid fa-user"></i></a>
+            <span>ABOUT</span>
+        </div>
+        <div class="nav-link flex flex-col justify-center items-center p-8 text-white hover:bg-black ">
+            <a href="#photos" class="text-2xl"><i class="fa-regular fa-eye"></i></a>
+            <span>PHOTOS</span>
+        </div>
+        <div class="nav-link flex flex-col justify-center items-center p-8 text-white hover:bg-black ">
+            <a href="#contact" class="text-2xl"><i class="fa-solid fa-envelope"></i></a>
+            <span>CONTACT</span>
+        </div>
+    </nav>
+    <header>
+        <div class="container mx-auto py-16  text-center w-7/12 text-white">
+            <h1 class="text-[64px]">I'm John Doe.</h1>
+            <p class="my-8">Photographer and Web Designer.</p>
+            <img src="./images/man_smoke.jpg" class="w-full" alt="">
+        </div>
+    </header>
+    <section id="about">
+        <div class="container mx-auto py-16 w-7/12 text-white">
+            <h2 class="border-b text-3xl pb-4 border-gray-600  w-60">My Name</h2>
+            <p class="text-[#757575] py-5">Some text about me. Some text about me. I am lorem ipsum consectetur
+                adipiscing
+                elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="skills">
+                <h3 class="text-2xl py-7">My Skills</h3>
+
+                <p class="text-[#757575] tracking-[.25rem] my-4">Photography</p>
+                <div class="skill-rate w-full bg-white h-8 ">
+                    <div class="rate w-11/12 bg-[#757575] h-full"></div>
+                </div>
+                <p class="text-[#757575] tracking-[.25rem] my-4">Web Design</p>
+                <div class="skill-rate w-full bg-white h-8 ">
+                    <div class="rate w-10/12 bg-[#757575] h-full"></div>
+                </div>
+                <p class="text-[#757575] tracking-[.25rem] my-4">Photoshop</p>
+                <div class="skill-rate w-full bg-white h-8 ">
+                    <div class="rate w-9/12 bg-[#757575] h-full"></div>
+                </div>
+
+            </div>
+            <div class="num-info flex justify-between items-center bg-white my-7 text-gray-900 px-28 py-9 text-xl ">
+                <div class="num flex flex-col  justify-center items-center">
+                    <span>11+</span>
+                    <span class="text-gray-700 text-[18px]">Partners</span>
+                </div>
+                <div class="num flex flex-col  justify-center items-center">
+                    <span>55+</span>
+                    <span class="text-gray-700 text-[18px]">Projects Done</span>
+                </div>
+                <div class="num flex flex-col  justify-center items-center">
+                    <span>89+</span>
+                    <span class="text-gray-700 text-[18px]">Happy Clients</span>
+                </div>
+                <div class="num flex flex-col  justify-center items-center">
+                    <span>150+</span>
+                    <span class="text-gray-700 text-[18px]">Meetings</span>
+                </div>
+            </div>
+            <button type="button" class="bg-white p-3 text-black hover:bg-[#757575]"><i
+                    class="fa-solid fa-download"></i>Download
+                Resume</button>
+
+            <h3 class="text-2xl py-7">My Skills</h3>
+            <div class="price flex  gap-5">
+                <ul class="basic text-center w-full opacity-60 hover:opacity-100 w-1/2 ">
+                    <li class="bg-[#757575] py-7 text-2xl"> Basic</li>
+                    <li class="bg-white text-gray-900 border-b py-5"> Web Design</li>
+                    <li class="bg-white text-gray-900 border-b py-5"> Photography</li>
+                    <li class="bg-white text-gray-900 border-b py-5"> 5GB Storage</li>
+                    <li class="bg-white text-gray-900 border-b py-5"> Mail Support</li>
+                    <li class="bg-white text-gray-900 border-b py-5">
+                        <h2 class="text-black text-3xl">$ 10</h2>
+                        <span class="text-gray-400">per month</span>
+                    </li>
+                    <li class="bg-[#F1F1F1] py-7">
+                        <button type="button" class="bg-white text-black py-3 px-4 hover:bg-black hover:text-white">Sign
+                            UP</button>
+                    </li>
+
+                </ul>
+                <ul class="basic text-center w-full opacity-60 hover:opacity-100  w-1/2">
+                    <li class="bg-[#757575] py-7 text-2xl"> Basic</li>
+                    <li class="bg-white text-gray-900 border-b py-5"> Web Design</li>
+                    <li class="bg-white text-gray-900 border-b py-5"> Photography</li>
+                    <li class="bg-white text-gray-900 border-b py-5"> 5GB Storage</li>
+                    <li class="bg-white text-gray-900 border-b py-5"> Mail Support</li>
+                    <li class="bg-white text-gray-900 border-b py-5">
+                        <h2 class="text-black text-3xl">$ 10</h2>
+                        <span class="text-gray-400">per month</span>
+                    </li>
+                    <li class="bg-[#F1F1F1] py-7">
+                        <button type="button" class="bg-white text-black py-3 px-4 hover:bg-black hover:text-white">Sign
+                            UP</button>
+                    </li>
+
+                </ul>
+            </div>
+
+            <h3 class="text-2xl py-7">My Reputation</h3>
+            <div class="reputation">
+                <ul>
+                    <li class="flex justify-flex items-center gap-6 text-[#757575] mb-7">
+                        <img src="./images/bandmember.jpg" class="rounded-full h-24" alt="">
+                        <div class="flex flex-col">
+                            <p>Chris Fox . CEO at Mighty Schools.</p>
+                            <p>John Doe saved us from a web disaster.</p>
+                        </div>
+                    </li>
+                    <li class="flex justify-flex items-center gap-6 text-[#757575]">
+                        <img src="./images/avatar_g2.jpg" class="rounded-full h-24" alt="">
+                        <div class="flex flex-col">
+                            <p>Chris Fox . CEO at Mighty Schools.</p>
+                            <p>John Doe saved us from a web disaster.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="photos">
+        <div class="container mx-auto py-16 w-7/12 text-white">
+            <h2 class="border-b text-3xl pb-4 border-gray-600  w-60">My Photos</h2>
+            <div class="grid grid-rows-9 grid-col-4 gap-4">
+                <div class="col-span-2 row-span-2"><img src="./images/wedding.jpg" class="w-full h-full" alt=""></div>
+                <div class=" col-span-2 row-span-3 col-start-3 "><img src="./images/underwater.jpg"
+                        class="w-full h-full " alt=""></div>
+                <div class=" col-span-2 row-span-5 row-start-3"><img src="./images/rocks.jpg" class="w-full h-full"
+                        alt="">
+                </div>
+                <div class="col-span-2 row-span-2 col-start-3 row-start-4"><img src="./images/chef.jpg"
+                        class="w-full h-full" alt=""></div>
+                <div class="col-span-2 row-span-2 col-start-3 row-start-6"><img src="./images/wedding.jpg"
+                        class="w-full h-full" alt=""></div>
+                <div class="col-span-2 row-span-2 row-start-8"><img src="./images/sailboat.jpg" class="w-full h-full"
+                        alt="">
+                </div>
+                <div class="col-span-2 row-span-2 col-start-3 row-start-8"><img src="./images/p6.jpg"
+                        class="w-full h-full" alt=""></div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container mx-auto py-16 w-7/12 text-white">
+            <h2 class="border-b text-3xl pb-4 border-gray-600  w-60">Contact Me</h2>
+            <ul class=" my-9">
+                <li class="my-4"><i class="fa-solid fa-location-dot text-3xl"></i><span class="ms-4 text-[#757575]">
+                        Chicago,
+                        US</span></li>
+                <li class="my-4"><i class="fa-solid fa-phone  text-3xl"></i><span class="ms-4 text-[#757575]">Phone: +00
+                        151515</span></li>
+                <li class="my-4"><i class="fa-solid fa-envelope text-3xl"></i><span class="ms-4 text-[#757575]">Phone:
+                        Email: mail@mail.com</span></li>
+            </ul>
+            <p class="mt-7 mb-3 text-[#757575]">Let's get in touch. Send me a message:</p>
+            <form>
+                <input type="text" placeholder="Name" id="name" class="focus:border-gray-950 w-full mb-6">
+                <input type="email" placeholder="Email" id="email" class="focus:border-gray-950 w-full mb-6">
+                <input type="text" placeholder="subject" id="subject" class="focus:border-gray-950 w-full mb-6">
+                <input type="text" placeholder="Message" id="message" class="focus:border-gray-950 w-full mb-6">
+                <button type="button" class="bg-white text-black p-3 hover:bg-[#f1f1f1]">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container mx-auto py-16 w-7/12  text-[#757575]">
+
+            <div class="social-icons mb-2 text-xl">
+                <i class="fa-brands fa-square-facebook hover:text-gray-600"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <p class="">Powered by w3.css</p>
+        </div>
+    </footer>
+</body>
+
+</html>
